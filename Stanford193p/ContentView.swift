@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    let emojis : [String] = ["😂", "😭", "😈", "😼", "😳"]
+    let emojis : [String] = ["😭", "😭", "😈", "😼", "😳", "😳", "😳", "😳", "😳", "😳", "😳", "😳"]
     @State var cardCount: Int = 4
     
     var body: some View {
         VStack{
-            cards
-            cardCountAdjusters
+            ScrollView {
+                cards
+                Spacer()
+                cardCountAdjusters
+            }
         }
         .padding()
     }
@@ -29,32 +32,32 @@ struct ContentView: View {
         .font(.largeTitle)
     }
     var cards: some View {
-        HStack {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 145))]) {
             ForEach(0..<cardCount, id : \.self) { index in
                 CardView(content: emojis[index])
+                    .aspectRatio(2/3, contentMode: .fit)
             }
         }
         .foregroundColor(.orange)
         .padding()
     }
     
-    var cardRemover: some View {
+    func cardCountAdjusters(by offset: Int, symbol: String) -> some View {
         Button(action: {
-            if cardCount > 1 {
-                cardCount -= 1
-            }
+            cardCount += offset
         }, label: {
-            Image(systemName: "rectangle.stack.fill.badge.minus")
+            Image(systemName: symbol)
         })
+        .disabled(cardCount + offset < 1 || cardCount + offset > emojis.count)
+        
+    }
+    
+    var cardRemover: some View {
+        cardCountAdjusters(by: -1, symbol: "rectangle.stack.fill.badge.minus")
     }
     var cardAdder: some View {
-        Button(action: {
-            if cardCount < emojis.count {
-                cardCount += 1
-            }
-        }, label: {
-            Image(systemName: "rectangle.stack.fill.badge.plus")
-        })
+        cardCountAdjusters(by: +1, symbol: "rectangle.stack.fill.badge.plus")
+
     }
     
     
@@ -64,16 +67,16 @@ struct CardView: View {
     var content: String
     @State var isFaceUp: Bool = true
     var body: some View {
-        ZStack(content: {
-            if isFaceUp {
-                RoundedRectangle(cornerRadius: 12).foregroundColor(.white)
-                RoundedRectangle(cornerRadius: 12).strokeBorder(lineWidth: 2)
-                Text(content).font(.largeTitle)
+        ZStack {
+            let base = RoundedRectangle(cornerRadius: 12)
+            Group {
+                base.fill(.white)
+                base.strokeBorder(lineWidth: 2)
+                Text(content).font(.largeTitle) // emoji shown
             }
-            else {
-                RoundedRectangle(cornerRadius: 12)
-            }
-        })
+            .opacity(isFaceUp ? 1 : 0)
+            base.fill().opacity(isFaceUp ? 0 : 1) // the "back" of the cards
+        }
         .onTapGesture {
             isFaceUp.toggle()
         }
