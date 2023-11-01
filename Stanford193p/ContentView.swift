@@ -31,6 +31,7 @@ struct ContentView: View {
         .imageScale(.large)
         .font(.largeTitle)
     }
+    
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 145))]) {
             ForEach(0..<cardCount, id : \.self) { index in
