@@ -8,60 +8,81 @@
 import SwiftUI
 
 struct ContentView: View {
-    let emojis : [String] = ["😭", "😭", "😈", "😼", "😳", "😳", "😳", "😳", "😳", "😳", "😳", "😳"]
+    
+    @State var currentTheme: CardTheme = .halloween
     @State var cardCount: Int = 4
+    
+    enum CardTheme {
+        case monkey, halloween, christmas
+    }
+    
+    var currentEmojis: [String] {
+        switch currentTheme {
+        case .monkey:
+            return monkeyEmojis
+        case .halloween:
+            return halloweenEmojis
+        case .christmas:
+            return christmasEmojis
+        }
+    }
+
+    let monkeyEmojis: [String] = ["🙈", "🙉", "🙊", "🐵"]
+    let halloweenEmojis: [String] = ["🎃", "👻", "🪦", "💀"]
+    let christmasEmojis: [String] = ["🎄", "🌲", "🎅", "🤶"]
     
     var body: some View {
         VStack{
             ScrollView {
+                title
                 cards
-                Spacer()
-                cardCountAdjusters
+                themes
             }
         }
         .padding()
     }
     
-    var cardCountAdjusters: some View {
-        HStack {
-            cardRemover
-            Spacer()
-            cardAdder
+    var themes: some View {
+        VStack {
+            monkeyButton
+            halloweenButton
+            christmasButton
         }
-        .imageScale(.large)
-        .font(.largeTitle)
+    }
+    
+    func themeButtons(theme: CardTheme, buttonName: String) -> some View {
+        Button(action: {currentTheme = theme}) {
+            Text(buttonName)
+        }
+    }
+    
+    var monkeyButton: some View {
+        themeButtons(theme: .monkey, buttonName: "Monkey")
+    }
+    
+    var halloweenButton: some View {
+        themeButtons(theme: .halloween, buttonName: "Halloween")
+    }
+    
+    var christmasButton: some View {
+        themeButtons(theme: .christmas, buttonName: "Christmas")
+    }
+    
+    var title: some View {
+        Text("Memorize")
+            .font(.title)
     }
     
     var cards: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 145))]) {
+        return LazyVGrid(columns: [GridItem(.adaptive(minimum: 145))]) {
             ForEach(0..<cardCount, id : \.self) { index in
-                CardView(content: emojis[index])
+                CardView(content: currentEmojis[index])
                     .aspectRatio(2/3, contentMode: .fit)
             }
         }
         .foregroundColor(.orange)
         .padding()
     }
-    
-    func cardCountAdjusters(by offset: Int, symbol: String) -> some View {
-        Button(action: {
-            cardCount += offset
-        }, label: {
-            Image(systemName: symbol)
-        })
-        .disabled(cardCount + offset < 1 || cardCount + offset > emojis.count)
-        
-    }
-    
-    var cardRemover: some View {
-        cardCountAdjusters(by: -1, symbol: "rectangle.stack.fill.badge.minus")
-    }
-    var cardAdder: some View {
-        cardCountAdjusters(by: +1, symbol: "rectangle.stack.fill.badge.plus")
-
-    }
-    
-    
 }
 
 struct CardView: View {
