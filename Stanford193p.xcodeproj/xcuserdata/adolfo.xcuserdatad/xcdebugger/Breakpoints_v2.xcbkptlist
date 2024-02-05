@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "396F1664-CB7D-4928-AF0F-7C754D4C4356"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA333264-8AD5-484C-AD2D-491CEE95E127"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/EmojiMemoryGameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "cards"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ADD884E-3945-4B3B-A61D-86D58328383E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/EmojiMemoryGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "createMemoryGame(theme:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0EDD364-9D20-42B1-9B1E-8550ABFBF9B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/EmojiMemoryGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "createMemoryGame(theme:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAA758D7-4E78-49A0-B5DE-C3749A6C2BAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/MemorizeGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "choose(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08D4DB70-08C7-4F68-9E49-4814003E424B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/MemorizeGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "choose(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38701163-22C6-42B4-9E2A-8D69F47F0548"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/MemorizeGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "choose(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "38701163-22C6-42B4-9E2A-8D69F47F0548 - a8c8fe39b160469"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stanford193p.MemoryGame.choose(Stanford193p.MemoryGame&lt;&#x3c4;_0_0&gt;.Card) -&gt; ()"
+                  moduleName = "Stanford193p"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adolfo/Desktop/Stanford193p/Stanford193p/MemorizeGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2608">
+               </Location>
+               <Location
+                  uuid = "38701163-22C6-42B4-9E2A-8D69F47F0548 - a8c8fe39b160448"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stanford193p.MemoryGame.choose(Stanford193p.MemoryGame&lt;&#x3c4;_0_0&gt;.Card) -&gt; ()"
+                  moduleName = "Stanford193p"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adolfo/Desktop/Stanford193p/Stanford193p/MemorizeGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1924">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F1474F3-E33C-41C6-8DCD-0F2239520C57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stanford193p/MemorizeGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "choose(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F1474F3-E33C-41C6-8DCD-0F2239520C57 - a8c8fe39b160512"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stanford193p.MemoryGame.choose(Stanford193p.MemoryGame&lt;&#x3c4;_0_0&gt;.Card) -&gt; ()"
+                  moduleName = "Stanford193p"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adolfo/Desktop/Stanford193p/Stanford193p/MemorizeGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "2460">
+               </Location>
+               <Location
+                  uuid = "2F1474F3-E33C-41C6-8DCD-0F2239520C57 - a8c8fe39b160512"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stanford193p.MemoryGame.choose(Stanford193p.MemoryGame&lt;&#x3c4;_0_0&gt;.Card) -&gt; ()"
+                  moduleName = "Stanford193p"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adolfo/Desktop/Stanford193p/Stanford193p/MemorizeGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
