@@ -74,9 +74,13 @@ This project demonstrates my expertise in the following:
 
 ---
 
-## 🎥 Screenshots & Demo
+## 🎥 Demo
 
-> **Coming Soon**: Watch the gameplay in action with a screen recording!
+### Gameplay in Action  
+![Gameplay Demo](StanfordCS193pDemo-Gameplay.gif)
+
+### Shuffle & New Game Features  
+![Shuffle and New Game](StanfordCS193pDemo-Shuffle:NewGame.gif)
 
 ---
 
