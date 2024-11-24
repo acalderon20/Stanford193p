@@ -80,7 +80,7 @@ This project demonstrates my expertise in the following:
 ![Gameplay Demo](StanfordCS193pDemo-Gameplay.gif)
 
 ### Shuffle & New Game Features  
-![Shuffle and New Game](StanfordCS193pDemo-Shuffle:NewGame.gif)
+![Shuffle and New Game](StanfordCS193pDemo-Shuffle-NewGame.gif)
 
 ---
 
